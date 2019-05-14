@@ -218,6 +218,15 @@ void display()
 		point1();
 		point2();
 		//line();
+		if(diff == 0){
+			drawstring(190, 110, "DIFFICULTY : EASY", GLUT_BITMAP_HELVETICA_18);
+		}
+		else if(diff == 1){
+			drawstring(190, 110, "DIFFICULTY : MEDIUM", GLUT_BITMAP_HELVETICA_18);
+		}
+		if(diff == 2){
+			drawstring(190, 110, "DIFFICULTY : HARD", GLUT_BITMAP_HELVETICA_18);
+		}
 		//DISPLAY MAZE
 		draw_wall(diff);
 		glutPostRedisplay();
@@ -299,7 +308,7 @@ int main(int argc,char **argv)
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(600, 600);
-	glutCreateWindow("Pathfinding game");
+	glutCreateWindow("Dynamic Maze Game");
 	glutReshapeFunc(myreshape);
 	glutDisplayFunc(display);
 	glutIdleFunc(idle);
