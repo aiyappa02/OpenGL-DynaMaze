@@ -218,6 +218,7 @@ void display()
 		point1();
 		point2();
 		//line();
+		//DISPLAY MAZE DIFFICULTY
 		if(diff == 0){
 			drawstring(190, 110, "DIFFICULTY : EASY", GLUT_BITMAP_HELVETICA_18);
 		}
