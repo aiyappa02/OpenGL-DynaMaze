@@ -8,13 +8,15 @@
 #include "wall.h"
 #include "spfunc.h"
 #include "randoms.h"
-#include<pthread.h>
+#include<thread>
 int x,y;
 int i,count;
 char t[2];
-float px=0.0,py=175.0;
+//float px=0.0;
+//float py=175.0;
 int wall_count = 0;
-int flag, df=10;
+//int flag, df=10;
+int df = 10;
 int diff = 0;
 clock_t start,end;
 void point()
@@ -314,9 +316,10 @@ void playsong()
 int main(int argc,char **argv)
 {
 	glutInit(&argc, argv);
-	//std::pthread t1(playsong);
+
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(600, 600);
+	std::thread t1(playsong);
 	glutCreateWindow("Dynamic Maze Game");
 	glutReshapeFunc(myreshape);
 	glutDisplayFunc(display);

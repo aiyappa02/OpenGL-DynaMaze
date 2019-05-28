@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1557985090 source:/home/aiyappa/CG project/labyrinth/main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<GL/glut.h>
+	<math.h>
+	<string.h>
+	<time.h>
+	<unistd.h>
+	"wall.h"
+	"spfunc.h"
+	"randoms.h"
+	<thread>
+
+1557817962 /home/aiyappa/CG project/labyrinth/wall.h
+	<stdio.h>
+	<GL/glut.h>
+	<GL/glu.h>
+
+1557817962 /home/aiyappa/CG project/labyrinth/spfunc.h
+	<stdio.h>
+	<GL/glut.h>
+	<GL/glu.h>
+
+1557817962 /home/aiyappa/CG project/labyrinth/randoms.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
